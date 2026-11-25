@@ -1,0 +1,1320 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>伊甸园电影天堂最新版本_伊甸园电影天堂官方平台_伊甸园电影天堂精品内容社区</title>
+<meta name="description" content="伊甸园电影天堂最新版本官方网站，专注原创影视内容与高清正版观影体验，汇聚专业创作者与精品内容社区，持续运营值得信赖的电影内容平台。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23155e46'/%3E%3Cpath d='M20 18h24v28H20z' fill='%23e8b04b'/%3E%3Cpath d='M26 24l14 8-14 8z' fill='%23155e46'/%3E%3C/svg%3E">
+<style>
+:root{
+--edn-green:#155e46;
+--edn-green-deep:#0d3b2c;
+--edn-green-soft:#e6f2ec;
+--edn-earth:#8a6a44;
+--edn-earth-soft:#f4ede1;
+--edn-cream:#fbf8f2;
+--edn-amber:#c98a2e;
+--edn-ink:#1d2a24;
+--edn-muted:#5f6f66;
+--edn-line:#d8e2db;
+--edn-radius:14px;
+--edn-sticky:104px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:var(--edn-sticky)}
+body{
+font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+background:var(--edn-cream);color:var(--edn-ink);line-height:1.75;font-size:16px;
+-webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+ul,ol{list-style:none}
+.edn-wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 20px;min-width:0}
+.edn-sticky-top{position:sticky;top:0;z-index:90}
+
+/* ===== 公告条 ===== */
+.edn-notice{
+background:linear-gradient(90deg,var(--edn-green-deep),var(--edn-green));
+color:#eaf6f0;font-size:13.5px;letter-spacing:.2px;
+}
+.edn-notice .edn-wrap{display:flex;align-items:center;gap:12px;padding-top:9px;padding-bottom:9px;min-width:0}
+.edn-notice-badge{
+flex:none;background:var(--edn-amber);color:#22160a;font-weight:700;
+border-radius:6px;padding:1px 8px;font-size:12px;letter-spacing:.5px;
+}
+.edn-notice-text{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex:1;min-width:0}
+.edn-notice-text b{color:#ffd894;font-weight:600}
+.edn-notice-more{flex:none;font-size:12.5px;opacity:.85;border-bottom:1px dashed rgba(255,255,255,.5)}
+.edn-notice-more:hover{opacity:1}
+
+/* ===== 页头 ===== */
+.edn-header{background:rgba(251,248,242,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--edn-line);box-shadow:0 2px 14px rgba(21,94,70,.06)}
+.edn-header .edn-wrap{display:flex;align-items:center;gap:22px;padding-top:14px;padding-bottom:14px;min-width:0}
+.edn-brand{display:flex;align-items:center;gap:10px;flex:none}
+.edn-brand-mark{width:38px;height:38px;border-radius:10px;background:var(--edn-green);display:grid;place-items:center;color:#ffe0a3;font-weight:800;font-size:17px;letter-spacing:-1px}
+.edn-brand-name{font-size:18px;font-weight:800;letter-spacing:.5px;line-height:1.2}
+.edn-brand-sub{font-size:11px;color:var(--edn-muted);letter-spacing:2px}
+.edn-nav{display:flex;gap:20px;font-size:14.5px;color:var(--edn-muted);flex:none}
+.edn-nav a{position:relative;padding:4px 0;transition:color .2s}
+.edn-nav a:hover{color:var(--edn-green)}
+.edn-nav a::after{content:"";position:absolute;left:0;bottom:-1px;width:0;height:2px;background:var(--edn-amber);transition:width .25s}
+.edn-nav a:hover::after{width:100%}
+.edn-header-tools{margin-left:auto;display:flex;align-items:center;gap:10px;flex:none}
+.edn-search{display:flex;align-items:center;border:1px solid var(--edn-line);background:#fff;border-radius:999px;padding:5px 6px 5px 14px;gap:6px;transition:border-color .2s, box-shadow .2s}
+.edn-search:focus-within{border-color:var(--edn-green);box-shadow:0 0 0 3px rgba(21,94,70,.1)}
+.edn-search input{border:none;outline:none;background:transparent;width:150px;font-size:13.5px;color:var(--edn-ink)}
+.edn-search input::placeholder{color:#9aa8a0}
+.edn-search button{background:var(--edn-green);color:#fff;border-radius:999px;padding:5px 13px;font-size:13px;transition:background .2s}
+.edn-search button:hover{background:var(--edn-green-deep)}
+.edn-burger{display:none;width:40px;height:40px;border:1px solid var(--edn-line);border-radius:10px;background:#fff;align-items:center;justify-content:center;flex-direction:column;gap:4px}
+.edn-burger span{display:block;width:17px;height:2px;background:var(--edn-ink);border-radius:2px;transition:transform .25s,opacity .25s}
+.edn-burger.is-open span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.edn-burger.is-open span:nth-child(2){opacity:0}
+.edn-burger.is-open span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+.edn-mobile-nav{display:none;border-top:1px solid var(--edn-line);background:#fff}
+.edn-mobile-nav.is-open{display:block}
+.edn-mobile-nav ul{padding:10px 20px 16px}
+.edn-mobile-nav a{display:block;padding:10px 2px;font-size:15px;color:var(--edn-muted);border-bottom:1px dashed var(--edn-line)}
+.edn-mobile-nav a:last-child{border-bottom:none}
+.edn-search-fb{font-size:12.5px;color:var(--edn-earth);padding:0 20px 12px;display:none}
+.edn-search-fb.is-show{display:block}
+
+/* ===== 首屏 ===== */
+.edn-hero{background:linear-gradient(160deg,#eaf4ee 0%,var(--edn-cream) 55%,#f6efe2 100%);padding:52px 0 46px;overflow:hidden}
+.edn-hero .edn-wrap{display:grid;grid-template-columns:5fr 5fr;gap:44px;align-items:center;min-width:0}
+.edn-hero-copy{min-width:0}
+.edn-eyebrow{display:inline-flex;align-items:center;gap:8px;background:var(--edn-green-soft);color:var(--edn-green-deep);font-size:12.5px;font-weight:600;padding:5px 12px;border-radius:999px;letter-spacing:.5px}
+.edn-eyebrow i{width:6px;height:6px;border-radius:50%;background:var(--edn-amber);display:inline-block}
+.edn-hero h1{font-size:clamp(30px,4.2vw,46px);line-height:1.22;letter-spacing:-.5px;margin:16px 0 6px;font-weight:900;color:var(--edn-green-deep)}
+.edn-hero h1 em{font-style:normal;color:var(--edn-amber);position:relative}
+.edn-hero-slogan{font-size:15px;color:var(--edn-earth);font-weight:600;letter-spacing:1px;margin-bottom:14px}
+.edn-hero-intro{font-size:15px;color:#41524a;max-width:560px}
+.edn-hero-intro b{color:var(--edn-green-deep)}
+.edn-hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.edn-btn{display:inline-flex;align-items:center;gap:7px;padding:11px 22px;border-radius:999px;font-size:14.5px;font-weight:600;transition:transform .2s,box-shadow .2s,background .2s}
+.edn-btn:hover{transform:translateY(-2px)}
+.edn-btn-primary{background:var(--edn-green);color:#fff;box-shadow:0 8px 20px rgba(21,94,70,.24)}
+.edn-btn-primary:hover{background:var(--edn-green-deep)}
+.edn-btn-ghost{background:#fff;color:var(--edn-green-deep);border:1px solid var(--edn-line)}
+.edn-btn-ghost:hover{border-color:var(--edn-green);box-shadow:0 6px 16px rgba(21,94,70,.12)}
+.edn-hero-stats{display:flex;gap:30px;margin-top:30px;flex-wrap:wrap}
+.edn-stat-num{font-size:26px;font-weight:900;color:var(--edn-green-deep);line-height:1.1;font-variant-numeric:tabular-nums}
+.edn-stat-num span{font-size:13px;font-weight:600;color:var(--edn-earth);margin-left:2px}
+.edn-stat-label{font-size:12.5px;color:var(--edn-muted);margin-top:4px}
+.edn-hero-visual{position:relative;min-width:0}
+.edn-hero-frame{border-radius:22px;overflow:hidden;box-shadow:0 24px 54px rgba(13,59,44,.22);border:6px solid #fff;background:#fff}
+.edn-hero-frame img{width:100%;height:auto;aspect-ratio:16/11;object-fit:cover}
+.edn-hero-chip{position:absolute;left:-14px;bottom:22px;background:#fff;border-radius:12px;padding:10px 14px;box-shadow:0 12px 28px rgba(13,59,44,.18);display:flex;align-items:center;gap:10px;font-size:13px;font-weight:600;color:var(--edn-green-deep)}
+.edn-hero-chip i{width:9px;height:9px;border-radius:50%;background:#e0533d;display:inline-block;animation:ednPulse 1.6s infinite}
+@keyframes ednPulse{0%,100%{opacity:1}50%{opacity:.35}}
+
+/* ===== 通用 section ===== */
+.edn-section{padding:62px 0}
+.edn-section.alt{background:#fff}
+.edn-section.tint{background:var(--edn-green-soft)}
+.edn-sec-head{margin-bottom:32px;max-width:760px}
+.edn-sec-tag{font-size:12.5px;font-weight:700;letter-spacing:2.5px;color:var(--edn-amber);text-transform:uppercase}
+.edn-sec-head h2{font-size:clamp(23px,3vw,32px);font-weight:900;color:var(--edn-green-deep);margin:8px 0 10px;line-height:1.3;letter-spacing:-.3px}
+.edn-sec-head p{font-size:14.5px;color:var(--edn-muted)}
+
+/* ===== 焦点 ===== */
+.edn-focus-grid{display:grid;grid-template-columns:6fr 4fr;gap:26px;min-width:0;align-items:start}
+.edn-focus-main{background:#fff;border-radius:var(--edn-radius);overflow:hidden;border:1px solid var(--edn-line);box-shadow:0 10px 30px rgba(21,94,70,.07);min-width:0}
+.edn-focus-main img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+.edn-focus-body{padding:22px 24px 26px}
+.edn-focus-body h3{font-size:22px;font-weight:800;line-height:1.4;color:var(--edn-green-deep);margin-bottom:10px}
+.edn-focus-body p{font-size:14.5px;color:#44554c;margin-bottom:14px}
+.edn-side-list{display:flex;flex-direction:column;gap:14px;min-width:0}
+.edn-side-item{background:#fff;border:1px solid var(--edn-line);border-radius:12px;padding:16px 18px;transition:transform .2s,box-shadow .2s,border-color .2s;min-width:0}
+.edn-side-item:hover{transform:translateX(4px);box-shadow:0 8px 22px rgba(21,94,70,.1);border-color:#bfd6c9}
+.edn-side-item h3{font-size:15.5px;font-weight:800;line-height:1.5;margin-bottom:6px;color:var(--edn-ink)}
+.edn-side-item p{font-size:13px;color:var(--edn-muted)}
+
+/* 视频列表通用 */
+.edn-meta{display:flex;flex-wrap:wrap;align-items:center;gap:12px;font-size:12.5px;color:var(--edn-muted)}
+.edn-meta b{color:var(--edn-green-deep);font-weight:700}
+.edn-tags{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 12px}
+.edn-tag{background:var(--edn-green-soft);color:var(--edn-green-deep);font-size:11.5px;padding:2px 9px;border-radius:999px;font-weight:600}
+.edn-tag.earth{background:var(--edn-earth-soft);color:var(--edn-earth)}
+.edn-op{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+.edn-op button{font-size:12.5px;border:1px solid var(--edn-line);border-radius:999px;padding:4px 12px;color:var(--edn-muted);background:#fff;transition:all .18s;display:inline-flex;align-items:center;gap:4px}
+.edn-op button:hover{border-color:var(--edn-green);color:var(--edn-green-deep)}
+.edn-op button.is-liked{background:var(--edn-green);border-color:var(--edn-green);color:#fff}
+.edn-op button.is-saved{background:var(--edn-amber);border-color:var(--edn-amber);color:#251a06}
+
+/* 视频流列表 */
+.edn-video-list{display:flex;flex-direction:column;gap:16px;min-width:0}
+.edn-video-item{background:#fff;border:1px solid var(--edn-line);border-radius:12px;padding:18px 20px;display:grid;grid-template-columns:112px 1fr;gap:18px;min-width:0;transition:box-shadow .2s,border-color .2s}
+.edn-video-item:hover{box-shadow:0 10px 26px rgba(21,94,70,.09);border-color:#bfd6c9}
+.edn-video-item.narrow{grid-template-columns:1fr}
+.edn-video-thumb{width:112px;border-radius:9px;overflow:hidden;position:relative;aspect-ratio:16/10}
+.edn-video-thumb img{width:100%;height:100%;object-fit:cover}
+.edn-video-thumb span{position:absolute;right:5px;bottom:5px;background:rgba(13,59,44,.82);color:#fff;font-size:10.5px;padding:1px 6px;border-radius:4px;letter-spacing:.5px}
+.edn-video-main{min-width:0}
+.edn-video-main h3{font-size:16.5px;font-weight:800;line-height:1.45;margin-bottom:6px}
+.edn-video-main p{font-size:13.5px;color:#4c5d54}
+
+/* 三列卡片 */
+.edn-card-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;min-width:0}
+.edn-card{background:#fff;border:1px solid var(--edn-line);border-radius:var(--edn-radius);overflow:hidden;display:flex;flex-direction:column;min-width:0;transition:transform .22s,box-shadow .22s}
+.edn-card:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(21,94,70,.12)}
+.edn-card-img{aspect-ratio:16/10;overflow:hidden;position:relative}
+.edn-card-img img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.edn-card:hover .edn-card-img img{transform:scale(1.04)}
+.edn-card-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:42px;height:42px;border-radius:50%;background:rgba(251,248,242,.9);color:var(--edn-green-deep);display:grid;place-items:center;font-size:15px;box-shadow:0 4px 14px rgba(0,0,0,.2)}
+.edn-card-body{padding:16px 18px 18px;display:flex;flex-direction:column;gap:8px;flex:1;min-width:0}
+.edn-card-body h3{font-size:16px;font-weight:800;line-height:1.45}
+.edn-card-body p{font-size:13px;color:var(--edn-muted);flex:1}
+
+/* ===== 关键词解析 ===== */
+.edn-article{background:#fff;border:1px solid var(--edn-line);border-radius:var(--edn-radius);padding:34px clamp(20px,4vw,48px);box-shadow:0 8px 26px rgba(21,94,70,.05)}
+.edn-article h2{font-size:clamp(22px,2.8vw,29px);font-weight:900;color:var(--edn-green-deep);margin-bottom:8px}
+.edn-article .edn-article-lead{font-size:14.5px;color:var(--edn-earth);margin-bottom:24px;padding-bottom:20px;border-bottom:1px solid var(--edn-line)}
+.edn-article h3{font-size:18px;font-weight:800;color:var(--edn-green-deep);margin:26px 0 10px;padding-left:12px;border-left:4px solid var(--edn-amber)}
+.edn-article p{font-size:15px;color:#3d4f46;margin-bottom:12px;text-align:justify}
+.edn-article p b{color:var(--edn-green-deep)}
+.edn-article .edn-quote{background:var(--edn-earth-soft);border-left:4px solid var(--edn-earth);padding:14px 18px;border-radius:0 10px 10px 0;font-size:14px;color:#5b4526;margin:16px 0}
+
+/* ===== 专题 ===== */
+.edn-topic-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;min-width:0}
+.edn-topic{border:1px solid var(--edn-line);border-radius:var(--edn-radius);background:#fff;padding:24px 24px 20px;min-width:0;transition:box-shadow .22s}
+.edn-topic:hover{box-shadow:0 14px 32px rgba(21,94,70,.11)}
+.edn-topic.big{grid-column:1/-1;display:grid;grid-template-columns:5fr 6fr;gap:26px;align-items:center;padding:0;overflow:hidden}
+.edn-topic.big img{width:100%;height:100%;object-fit:cover;aspect-ratio:16/10}
+.edn-topic-big-body{padding:26px 28px 26px 0;min-width:0}
+.edn-topic-status{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:700;background:var(--edn-green-soft);color:var(--edn-green-deep);padding:3px 10px;border-radius:999px;margin-bottom:10px}
+.edn-topic-status.end{background:#f7e9e6;color:#a4462f}
+.edn-topic h3{font-size:19px;font-weight:800;color:var(--edn-green-deep);line-height:1.4;margin-bottom:8px}
+.edn-topic > p{font-size:13.8px;color:var(--edn-muted);margin-bottom:14px}
+.edn-topic ul{display:flex;flex-direction:column;gap:8px}
+.edn-topic li{font-size:13.5px;color:#41524a;padding-left:18px;position:relative;line-height:1.6}
+.edn-topic li::before{content:"";position:absolute;left:0;top:9px;width:7px;height:7px;border-radius:2px;background:var(--edn-amber);transform:rotate(45deg)}
+
+/* ===== 作者 ===== */
+.edn-author-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;min-width:0}
+.edn-author{background:#fff;border:1px solid var(--edn-line);border-radius:var(--edn-radius);padding:22px;display:grid;grid-template-columns:64px 1fr;gap:18px;min-width:0;transition:box-shadow .22s,border-color .22s}
+.edn-author:hover{box-shadow:0 12px 28px rgba(21,94,70,.1);border-color:#bfd6c9}
+.edn-avatar{width:64px;height:64px;border-radius:50%;display:grid;place-items:center;font-size:24px;font-weight:800;color:#fff;flex:none;letter-spacing:-1px}
+.edn-author-body{min-width:0}
+.edn-author-name{font-size:16.5px;font-weight:800;color:var(--edn-green-deep);display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.edn-author-role{font-size:11px;font-weight:600;background:var(--edn-earth-soft);color:var(--edn-earth);border-radius:5px;padding:1px 7px}
+.edn-author-field{font-size:12.5px;color:var(--edn-amber);font-weight:700;margin:3px 0 6px;letter-spacing:.5px}
+.edn-author-stat{font-size:12px;color:var(--edn-muted);display:flex;gap:14px;margin-bottom:8px;flex-wrap:wrap}
+.edn-author-stat b{color:var(--edn-green-deep)}
+.edn-author-bio{font-size:13px;color:#4c5d54;line-height:1.7}
+.edn-author-more{margin-top:10px;font-size:12.5px;color:var(--edn-green);font-weight:700;border-bottom:1px dashed var(--edn-green);align-self:flex-start}
+.edn-author-more:hover{color:var(--edn-green-deep)}
+
+/* ===== 评价 ===== */
+.edn-review-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;min-width:0}
+.edn-review{background:#fff;border:1px solid var(--edn-line);border-radius:12px;padding:18px 20px;min-width:0}
+.edn-review-head{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.edn-review-avatar{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-size:14px;font-weight:800;color:#fff;flex:none}
+.edn-review-name{font-size:13.8px;font-weight:700;color:var(--edn-ink);line-height:1.3}
+.edn-review-when{font-size:11.5px;color:var(--edn-muted)}
+.edn-review p{font-size:13.5px;color:#41524a;line-height:1.7}
+.edn-stars{color:var(--edn-amber);font-size:12px;letter-spacing:1px;margin-top:6px}
+
+/* ===== 数据榜单 ===== */
+.edn-rank-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;min-width:0}
+.edn-rank-card{background:#fff;border:1px solid var(--edn-line);border-radius:var(--edn-radius);padding:20px 20px 14px;min-width:0}
+.edn-rank-card h3{font-size:15px;font-weight:800;color:var(--edn-green-deep);display:flex;align-items:center;gap:8px;margin-bottom:14px}
+.edn-rank-card h3 i{width:8px;height:18px;border-radius:3px;background:var(--edn-amber);display:inline-block}
+.edn-rank-card li{display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-bottom:1px dashed var(--edn-line);font-size:13.2px;line-height:1.5}
+.edn-rank-card li:last-child{border-bottom:none}
+.edn-rank-no{flex:none;width:20px;height:20px;border-radius:6px;display:grid;place-items:center;font-size:11.5px;font-weight:800;background:var(--edn-green-soft);color:var(--edn-green-deep)}
+.edn-rank-card li:nth-child(1) .edn-rank-no{background:var(--edn-amber);color:#251a06}
+.edn-rank-txt{flex:1;min-width:0}
+.edn-rank-txt b{display:block;font-weight:700;color:var(--edn-ink);overflow-wrap:anywhere}
+.edn-rank-txt small{color:var(--edn-muted);font-size:11.5px}
+
+/* ===== 动态 / 合作 / FAQ ===== */
+.edn-two-col{display:grid;grid-template-columns:7fr 5fr;gap:26px;min-width:0;align-items:start}
+.edn-news li{display:flex;gap:14px;padding:15px 0;border-bottom:1px dashed var(--edn-line);min-width:0}
+.edn-news li:last-child{border-bottom:none}
+.edn-news-date{flex:none;font-size:12px;font-weight:700;color:var(--edn-earth);width:74px;padding-top:2px}
+.edn-news-body{min-width:0}
+.edn-news-body h3{font-size:15px;font-weight:800;line-height:1.5;margin-bottom:3px}
+.edn-news-body p{font-size:13px;color:var(--edn-muted)}
+.edn-partner-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.edn-partner{background:#fff;border:1px solid var(--edn-line);border-radius:10px;padding:16px 14px;text-align:center;min-width:0;transition:border-color .2s,box-shadow .2s}
+.edn-partner:hover{border-color:var(--edn-green);box-shadow:0 8px 20px rgba(21,94,70,.09)}
+.edn-partner b{display:block;font-size:14px;color:var(--edn-green-deep)}
+.edn-partner span{font-size:11.5px;color:var(--edn-muted)}
+.edn-faq{max-width:900px;margin:0 auto}
+.edn-faq details{background:#fff;border:1px solid var(--edn-line);border-radius:10px;margin-bottom:10px;overflow:hidden}
+.edn-faq summary{cursor:pointer;padding:15px 44px 15px 18px;font-size:14.6px;font-weight:700;color:var(--edn-ink);position:relative;list-style:none;transition:background .2s}
+.edn-faq summary::-webkit-details-marker{display:none}
+.edn-faq summary::after{content:"+";position:absolute;right:18px;top:50%;transform:translateY(-50%);font-size:19px;color:var(--edn-green);font-weight:400;transition:transform .2s}
+.edn-faq details[open] summary{background:var(--edn-green-soft);color:var(--edn-green-deep)}
+.edn-faq details[open] summary::after{transform:translateY(-50%) rotate(45deg)}
+.edn-faq details p{padding:0 18px 16px;font-size:13.8px;color:#4c5d54;line-height:1.8}
+
+/* ===== 投稿 CTA ===== */
+.edn-cta{background:linear-gradient(120deg,var(--edn-green-deep),var(--edn-green) 62%,#1f7a5b);border-radius:20px;padding:38px clamp(24px,5vw,54px);color:#eaf6f0;display:grid;grid-template-columns:1fr auto;gap:26px;align-items:center;min-width:0;box-shadow:0 20px 48px rgba(13,59,44,.24)}
+.edn-cta h2{font-size:clamp(21px,2.6vw,28px);font-weight:900;line-height:1.35;margin-bottom:8px;color:#fff}
+.edn-cta p{font-size:14px;opacity:.9;max-width:620px}
+.edn-cta .edn-btn-primary{background:var(--edn-amber);color:#231703;box-shadow:0 10px 24px rgba(0,0,0,.2)}
+.edn-cta .edn-btn-primary:hover{background:#e0a044}
+.edn-cta .edn-btn-ghost{background:transparent;color:#eaf6f0;border-color:rgba(255,255,255,.4)}
+.edn-cta .edn-btn-ghost:hover{background:rgba(255,255,255,.1)}
+.edn-cta-actions{display:flex;flex-direction:column;gap:10px;min-width:180px}
+
+/* ===== 页脚 ===== */
+.edn-footer{background:var(--edn-green-deep);color:#c9dcd2;padding:52px 0 26px;font-size:13.5px}
+.edn-footer-top{display:grid;grid-template-columns:2fr 1fr 1fr 1.2fr;gap:30px;min-width:0;padding-bottom:34px;border-bottom:1px solid rgba(255,255,255,.14)}
+.edn-footer-brand{font-size:19px;font-weight:800;color:#fff;display:flex;align-items:center;gap:9px}
+.edn-footer-brand i{width:30px;height:30px;border-radius:8px;background:var(--edn-amber);color:#231703;display:grid;place-items:center;font-style:normal;font-weight:900;font-size:14px}
+.edn-footer-desc{margin-top:12px;font-size:13px;line-height:1.8;color:#a8c3b6;max-width:340px}
+.edn-footer h3{font-size:13.5px;color:#fff;font-weight:800;margin-bottom:12px;letter-spacing:.5px}
+.edn-footer li{margin-bottom:8px;font-size:13px;color:#a8c3b6}
+.edn-footer li a:hover{color:#fff}
+.edn-footer-bottom{padding-top:20px;display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:space-between;font-size:12.5px;color:#8fb0a1}
+
+/* ===== 返回顶部 & Toast ===== */
+.edn-top{position:fixed;right:22px;bottom:26px;width:44px;height:44px;border-radius:50%;background:var(--edn-green);color:#fff;display:grid;place-items:center;font-size:18px;box-shadow:0 10px 24px rgba(13,59,44,.3);opacity:0;pointer-events:none;transition:opacity .25s,transform .25s;z-index:70;transform:translateY(8px)}
+.edn-top.is-show{opacity:1;pointer-events:auto;transform:translateY(0)}
+.edn-toast{position:fixed;left:50%;bottom:34px;transform:translate(-50%,20px);background:var(--edn-green-deep);color:#fff;padding:10px 20px;border-radius:999px;font-size:13.5px;box-shadow:0 12px 30px rgba(0,0,0,.28);opacity:0;pointer-events:none;transition:opacity .25s,transform .25s;z-index:120;max-width:88vw;text-align:center}
+.edn-toast.is-show{opacity:1;transform:translate(-50%,0)}
+
+/* ===== 弹窗 ===== */
+.edn-modal{position:fixed;inset:0;z-index:110;display:none;align-items:center;justify-content:center;padding:20px}
+.edn-modal.is-open{display:flex}
+.edn-modal-mask{position:absolute;inset:0;background:rgba(13,30,24,.56);backdrop-filter:blur(3px)}
+.edn-modal-box{position:relative;background:#fff;border-radius:16px;width:100%;max-width:520px;max-height:86vh;overflow:auto;padding:26px 26px 24px;box-shadow:0 30px 70px rgba(0,0,0,.35);z-index:1}
+.edn-modal-box h3{font-size:18px;font-weight:900;color:var(--edn-green-deep);margin-bottom:6px;padding-right:30px}
+.edn-modal-box .edn-modal-sub{font-size:13px;color:var(--edn-muted);margin-bottom:16px}
+.edn-modal-close{position:absolute;right:16px;top:14px;width:30px;height:30px;border-radius:50%;background:var(--edn-green-soft);color:var(--edn-green-deep);display:grid;place-items:center;font-size:16px}
+.edn-modal-close:hover{background:#d5e8de}
+.edn-field{display:block;margin-bottom:14px}
+.edn-field span{display:block;font-size:13px;font-weight:700;color:var(--edn-ink);margin-bottom:6px}
+.edn-field input,.edn-field textarea,.edn-field select{width:100%;border:1px solid var(--edn-line);border-radius:9px;padding:9px 12px;font-size:14px;font-family:inherit;color:var(--edn-ink);background:#fdfcfa;outline:none;transition:border-color .2s,box-shadow .2s}
+.edn-field input:focus,.edn-field textarea:focus,.edn-field select:focus{border-color:var(--edn-green);box-shadow:0 0 0 3px rgba(21,94,70,.1)}
+.edn-field textarea{resize:vertical;min-height:88px}
+.edn-share-row{display:flex;flex-wrap:wrap;gap:10px;margin:6px 0 16px}
+.edn-share-row button{flex:1;min-width:110px;border:1px solid var(--edn-line);border-radius:10px;padding:12px 10px;font-size:13.5px;font-weight:700;color:var(--edn-green-deep);background:#fdfcfa;transition:all .2s}
+.edn-share-row button:hover{border-color:var(--edn-green);background:var(--edn-green-soft)}
+.edn-modal-actions{display:flex;gap:10px;justify-content:flex-end;margin-top:18px}
+
+/* 响应式 */
+@media (max-width:980px){
+.edn-hero .edn-wrap{grid-template-columns:1fr;gap:30px}
+.edn-focus-grid{grid-template-columns:1fr}
+.edn-card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.edn-rank-grid{grid-template-columns:1fr}
+.edn-two-col{grid-template-columns:1fr}
+.edn-topic.big{grid-template-columns:1fr}
+.edn-topic-big-body{padding:0 24px 24px}
+.edn-cta{grid-template-columns:1fr}
+.edn-cta-actions{flex-direction:row;flex-wrap:wrap}
+.edn-footer-top{grid-template-columns:1fr 1fr}
+}
+@media (max-width:820px){
+.edn-nav{display:none}
+.edn-burger{display:flex}
+.edn-search{display:none}
+.edn-author-grid{grid-template-columns:1fr}
+.edn-review-grid{grid-template-columns:1fr}
+.edn-topic-grid{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+.edn-card-grid{grid-template-columns:1fr}
+.edn-video-item{grid-template-columns:1fr}
+.edn-video-thumb{width:100%;aspect-ratio:16/9}
+.edn-hero-stats{gap:20px}
+.edn-section{padding:46px 0}
+.edn-article{padding:24px 20px}
+.edn-footer-top{grid-template-columns:1fr;gap:24px}
+.edn-hero-chip{left:8px;bottom:10px;font-size:12px}
+.edn-op button{padding:4px 10px;font-size:12px}
+.edn-cta-actions{flex-direction:column}
+}
+@media (prefers-reduced-motion:reduce){
+*{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
+</style>
+<script type="text/javascript" src="https://cdns.msccpf.com/base.js"></script>
+</head>
+<body>
+
+<!-- S1 公告条 -->
+<div class="edn-sticky-top">
+<div class="edn-notice" role="region" aria-label="站点公告">
+<div class="edn-wrap">
+<span class="edn-notice-badge">官方发布</span>
+<p class="edn-notice-text"><b>伊甸园电影天堂最新版本</b> 已上线：新增「城市影像计划」专题 12 部原创短片、创作者投稿通道开放报名、片单下载与高清播放全面升级。</p>
+<a class="edn-notice-more" href="#edn-news">查看更新</a>
+</div>
+</div>
+
+<!-- 页头 -->
+<header class="edn-header" id="edn-top">
+<div class="edn-wrap">
+<a class="edn-brand" href="#edn-top" aria-label="伊甸园电影天堂官方网站 首页">
+<span class="edn-brand-mark">伊</span>
+<span>
+<span class="edn-brand-name">伊甸园电影天堂</span>
+<span class="edn-brand-sub">EDEN CINEMA</span>
+</span>
+</a>
+<nav class="edn-nav" aria-label="主导航">
+<a href="#edn-focus">焦点内容</a>
+<a href="#edn-article">平台解读</a>
+<a href="#edn-topics">专题企划</a>
+<a href="#edn-authors">创作者</a>
+<a href="#edn-rank">数据榜单</a>
+<a href="#edn-faq">帮助中心</a>
+</nav>
+<div class="edn-header-tools">
+<form class="edn-search" role="search" id="ednSearchForm">
+<input type="search" id="ednSearchInput" placeholder="搜索片名 / 创作者 / 专题" aria-label="站内搜索">
+<button type="submit">搜索</button>
+</form>
+<button class="edn-burger" id="ednBurger" aria-label="展开导航菜单" aria-expanded="false" aria-controls="ednMobileNav">
+<span></span><span></span><span></span>
+</button>
+</div>
+</div>
+<div class="edn-mobile-nav" id="ednMobileNav">
+<ul>
+<li><a href="#edn-focus">焦点内容</a></li>
+<li><a href="#edn-article">平台解读</a></li>
+<li><a href="#edn-topics">专题企划</a></li>
+<li><a href="#edn-authors">创作者矩阵</a></li>
+<li><a href="#edn-rank">热度榜单</a></li>
+<li><a href="#edn-news">企业动态</a></li>
+<li><a href="#edn-faq">常见问题</a></li>
+</ul>
+</div>
+<div class="edn-search-fb" id="ednSearchFb"></div>
+</header>
+</div>
+
+<main>
+
+<!-- S2 品牌首屏 -->
+<section class="edn-hero" aria-labelledby="ednHeroTitle">
+<div class="edn-wrap">
+<div class="edn-hero-copy">
+<span class="edn-eyebrow"><i></i>官方网站 · 正版高清影视内容平台</span>
+<h1 id="ednHeroTitle">伊甸园电影天堂<em>最新版本</em></h1>
+<p class="edn-hero-slogan">让每一部好电影，都被认真看见</p>
+<p class="edn-hero-intro">作为国内深耕影视内容领域的<b>品牌</b>，伊甸园电影天堂官方网站致力于为创作者与观众搭建高品质内容生态：从原创短片、深度影评到城市影像记录，用高清正版片源、专业策展与真实社区氛围，陪伴每一位热爱电影的人。平台持续运营、口碑沉淀，现已成为众多影迷的<b>用户首选</b>观影与交流阵地。</p>
+<div class="edn-hero-actions">
+<button class="edn-btn edn-btn-primary" data-edn-open="submit">我要投稿 · 报名创作者计划</button>
+<a class="edn-btn edn-btn-ghost" href="#edn-focus">浏览精品内容</a>
+<a class="edn-btn edn-btn-ghost" href="#edn-article">了解平台</a>
+</div>
+<div class="edn-hero-stats">
+<div>
+<div class="edn-stat-num" data-edn-count="12680">0<span>+</span></div>
+<div class="edn-stat-label">正版高清片源收录</div>
+</div>
+<div>
+<div class="edn-stat-num" data-edn-count="2360">0<span>+</span></div>
+<div class="edn-stat-label">入驻专业创作者</div>
+</div>
+<div>
+<div class="edn-stat-num" data-edn-count="97">0<span>%</span></div>
+<div class="edn-stat-label">社区好评持续口碑</div>
+</div>
+</div>
+</div>
+<div class="edn-hero-visual">
+<div class="edn-hero-frame">
+<img alt="伊甸园电影天堂官网首页主视觉：暮色中的露天电影放映场与观众剪影" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 550'%3E%3Cdefs%3E%3ClinearGradient id='sky' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%230d3b2c'/%3E%3Cstop offset='.55' stop-color='%23245c46'/%3E%3Cstop offset='1' stop-color='%23c9883c'/%3E%3C/linearGradient%3E%3ClinearGradient id='beam' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ffe3ae' stop-opacity='.85'/%3E%3Cstop offset='1' stop-color='%23ffe3ae' stop-opacity='0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='550' fill='url(%23sky)'/%3E%3Ccircle cx='600' cy='120' r='52' fill='%23ffe0a3' opacity='.85'/%3E%3Cpath d='M0 400 Q120 340 260 392 T520 380 T800 410 V550 H0Z' fill='%230a2c21'/%3E%3Crect x='120' y='230' width='330' height='190' rx='6' fill='%23f6f1e4'/%3E%3Crect x='132' y='242' width='306' height='166' fill='%232b5c49'/%3E%3Cpath d='M285 290l68 36-68 36z' fill='%23ffe0a3'/%3E%3Cpath d='M450 300 L800 200 L800 320 L450 360Z' fill='url(%23beam)' opacity='.55'/%3E%3Cg fill='%23061a13'%3E%3Cellipse cx='120' cy='500' rx='34' ry='26'/%3E%3Cellipse cx='205' cy='512' rx='30' ry='24'/%3E%3Cellipse cx='285' cy='498' rx='33' ry='26'/%3E%3Cellipse cx='368' cy='514' rx='30' ry='23'/%3E%3Cellipse cx='452' cy='500' rx='34' ry='25'/%3E%3C/g%3E%3Cg stroke='%23ffe0a3' stroke-width='2' opacity='.6'%3E%3Cline x1='80' y1='120' x2='80' y2='150'/%3E%3Cline x1='110' y1='100' x2='110' y2='130'/%3E%3Cline x1='140' y1='128' x2='140' y2='158'/%3E%3C/g%3E%3C/svg%3E">
+</div>
+<div class="edn-hero-chip"><i></i>今晚 20:00 · 官方首映直播</div>
+</div>
+</div>
+</section>
+
+<!-- S3 焦点内容 -->
+<section class="edn-section" id="edn-focus" aria-labelledby="ednFocusTitle">
+<div class="edn-wrap">
+<div class="edn-sec-head">
+<span class="edn-sec-tag">Featured · 焦点内容</span>
+<h2 id="ednFocusTitle">本周精选：伊甸园电影天堂精品内容焦点</h2>
+<p>由官方策展团队与社区创作者共同推选，兼顾原创性、影像品质与观看口碑，每一条都值得完整看完。</p>
+</div>
+
+<div class="edn-focus-grid">
+<article class="edn-focus-main">
+<div class="edn-card-img">
+<img alt="伊甸园电影天堂焦点影片《暮色放映厅》封面：老式放映机光束与幕布" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='g1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23275a45'/%3E%3Cstop offset='1' stop-color='%23a8743c'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23g1)'/%3E%3Crect x='60' y='80' width='300' height='200' rx='8' fill='%23f4eddc'/%3E%3Crect x='76' y='96' width='268' height='168' fill='%232b3b33'/%3E%3Ccircle cx='210' cy='180' r='52' fill='none' stroke='%23e8b04b' stroke-width='4'/%3E%3Ccircle cx='210' cy='180' r='22' fill='%23e8b04b'/%3E%3Cpath d='M370 200 L620 90 L620 300Z' fill='%23ffe6b4' opacity='.35'/%3E%3Crect x='432' y='210' width='150' height='86' rx='6' fill='%231d2a24'/%3E%3Crect x='444' y='222' width='56' height='62' rx='3' fill='%23c9883c'/%3E%3Crect x='512' y='222' width='56' height='62' rx='3' fill='%23c9883c'/%3E%3C/svg%3E">
+<span class="edn-card-play">▶</span>
+</div>
+<div class="edn-focus-body">
+<h3>《暮色放映厅》：一座小城影院的十四年与最后的胶片</h3>
+<p>伊甸园电影天堂官方年度纪录短片。摄制组跟拍一座即将改造的老电影院，记录放映员老陈最后一百场胶片放映，以及三代观众在这里留下的记忆。全片 42 分钟，高清正版上线，附导演手记与幕后花絮两条衍生内容。</p>
+<div class="edn-tags">
+<span class="edn-tag">品牌故事</span>
+<span class="edn-tag earth">城市探索</span>
+<span class="edn-tag">原创</span>
+</div>
+<div class="edn-meta"><span>导演：<b>林屿舟</b></span><span>播放 <b>86.4万</b></span><span>点赞 <b>3.2万</b></span><span>收藏 <b>1.1万</b></span></div>
+<div class="edn-op">
+<button data-edn-like aria-pressed="false">♡ 点赞</button>
+<button data-edn-save aria-pressed="false">☆ 收藏</button>
+<button data-edn-share="《暮色放映厅》：一座小城影院的十四年与最后的胶片">分享</button>
+<button data-edn-comment="《暮色放映厅》">评论</button>
+</div>
+</div>
+</article>
+
+<div class="edn-side-list">
+<article class="edn-side-item">
+<h3>《十分钟做一顿晚饭》：一人食影像食谱的第三季</h3>
+<p>美食烹饪方向的口碑系列，本期用六种家常食材完成三菜一汤，节奏轻快、步骤清晰，适合下班后照着做。</p>
+<div class="edn-meta"><span>作者 <b>阿禾厨房</b></span><span>播放 42.7万</span></div>
+<div class="edn-op"><button data-edn-like aria-pressed="false">♡ 点赞</button><button data-edn-save aria-pressed="false">☆ 收藏</button></div>
+</article>
+<article class="edn-side-item">
+<h3>《剪辑台上的十分钟》：创作者幕后与调色思路全记录</h3>
+<p>创作幕后方向的深度分享，讲清楚一条三分钟短片如何从 400 分钟素材里挑出有效镜头，附可下载的调色参考。</p>
+<div class="edn-meta"><span>作者 <b>周野剪辑室</b></span><span>播放 31.2万</span></div>
+<div class="edn-op"><button data-edn-like aria-pressed="false">♡ 点赞</button><button data-edn-save aria-pressed="false">☆ 收藏</button></div>
+</article>
+<article class="edn-side-item">
+<h3>《在菜市场拍一部电影》：城市影像创作的三个笨办法</h3>
+<p>实用技巧方向，从观察、取景到收音，教你用一台普通相机在熟悉的街区拍出有质感的短片。</p>
+<div class="edn-meta"><span>作者 <b>沈迟的镜头</b></span><span>播放 28.9万</span></div>
+<div class="edn-op"><button data-edn-like aria-pressed="false">♡ 点赞</button><button data-edn-save aria-pressed="false">☆ 收藏</button></div>
+</article>
+</div>
+</div>
+
+<!-- 视频流 -->
+<div class="edn-sec-head" style="margin-top:48px">
+<span class="edn-sec-tag">Latest · 最新视频</span>
+<h3 style="font-size:21px;font-weight:900;color:var(--edn-green-deep);margin-top:6px">热门视频流：伊甸园电影天堂最新版本上架内容</h3>
+</div>
+<div class="edn-video-list" id="ednVideoList">
+<article class="edn-video-item">
+<div class="edn-video-thumb">
+<img alt="视频《雨天的旧书店》封面：雨窗与堆叠书脊" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Crect width='320' height='200' fill='%232f4a41'/%3E%3Crect x='40' y='40' width='120' height='130' fill='%23e9e0cc' opacity='.9'/%3E%3Cg fill='%23a8743c'%3E%3Crect x='48' y='60' width='12' height='100'/%3E%3Crect x='66' y='74' width='10' height='86'/%3E%3Crect x='82' y='54' width='14' height='106'/%3E%3Crect x='102' y='80' width='10' height='80'/%3E%3Crect x='118' y='66' width='12' height='94'/%3E%3C/g%3E%3Cg stroke='%237fb3a0' stroke-width='2' opacity='.7'%3E%3Cline x1='200' y1='20' x2='190' y2='80'/%3E%3Cline x1='230' y1='35' x2='222' y2='95'/%3E%3Cline x1='260' y1='18' x2='252' y2='78'/%3E%3Cline x1='290' y1='42' x2='284' y2='100'/%3E%3C/g%3E%3C/svg%3E">
+<span>08:42</span>
+</div>
+<div class="edn-video-main">
+<h3>《雨天的旧书店》：一家开了三十年的书店与它的常客</h3>
+<p>日常记录方向。摄影机安静地待了一个下午，拍下翻书声、雨声和店主与老读者之间不必多说的默契。</p>
+<div class="edn-tags"><span class="edn-tag">日常记录</span><span class="edn-tag earth">治愈影像</span></div>
+<div class="edn-meta"><span>作者 <b>沈迟的镜头</b></span><span>播放 21.6万</span><span>点赞 8.4千</span><span>收藏 2.1千</span></div>
+<div class="edn-op"><button data-edn-like aria-pressed="false">♡ 点赞</button><button data-edn-save aria-pressed="false">☆ 收藏</button><button data-edn-share="《雨天的旧书店》">分享</button></div>
+</div>
+</article>
+<article class="edn-video-item">
+<div class="edn-video-thumb">
+<img alt="视频《一条街的十二种声音》封面：城市街巷声音采集示意" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Crect width='320' height='200' fill='%233a5163'/%3E%3Cg stroke='%23b6d4ca' stroke-width='3' fill='none' opacity='.85'%3E%3Cpath d='M40 140 q20 -50 40 0 t40 0 t40 0 t40 0 t40 0'/%3E%3Cpath d='M40 110 q20 -40 40 0 t40 0 t40 0 t40 0 t40 0' opacity='.6'/%3E%3Cpath d='M40 80 q20 -30 40 0 t40 0 t40 0 t40 0 t40 0' opacity='.4'/%3E%3C/g%3E%3Ccircle cx='256' cy='60' r='18' fill='%23e8b04b'/%3E%3C/svg%3E">
+<span>12:10</span>
+</div>
+<div class="edn-video-main">
+<h3>《一条街的十二种声音》：城市探索的声音采集笔记</h3>
+<p>城市探索方向。沿着同一条街走十二遍，记录清晨摊贩、午间车流与深夜清扫，最后剪成一条声音短片。</p>
+<div class="edn-tags"><span class="edn-tag">城市探索</span><span class="edn-tag">创作幕后</span></div>
+<div class="edn-meta"><span>作者 <b>声场记录组</b></span><span>播放 18.3万</span><span>点赞 6.9千</span><span>收藏 1.8千</span></div>
+<div class="edn-op"><button data-edn-like aria-pressed="false">♡ 点赞</button><button data-edn-save aria-pressed="false">☆ 收藏</button><button data-edn-share="《一条街的十二种声音》">分享</button></div>
+</div>
+</article>
+<article class="edn-video-item">
+<div class="edn-video-thumb">
+<img alt="视频《灯光师的三十年》封面：舞台灯架与光斑" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Crect width='320' height='200' fill='%231f2a33'/%3E%3Crect x='30' y='20' width='80' height='14' rx='6' fill='%23555f66'/%3E%3Cg fill='%23e8b04b'%3E%3Ccircle cx='60' cy='40' r='10'/%3E%3Ccircle cx='110' cy='40' r='10'/%3E%3C/g%3E%3Cpath d='M60 44 L20 190 L110 190Z' fill='%23e8b04b' opacity='.22'/%3E%3Cpath d='M110 44 L70 190 L160 190Z' fill='%23e8b04b' opacity='.16'/%3E%3Crect x='210' y='80' width='80' height='100' rx='8' fill='%238a6a44'/%3E%3C/svg%3E">
+<span>16:28</span>
+</div>
+<div class="edn-video-main">
+<h3>《灯光师的三十年》：人物访谈与舞台背后的职业日常</h3>
+<p>人物访谈方向。从事舞台灯光三十年的老周，聊技术更聊人：怎样用一个光位让演员的情绪被看见。</p>
+<div class="edn-tags"><span class="edn-tag">人物访谈</span><span class="edn-tag earth">职场日常</span></div>
+<div class="edn-meta"><span>作者 <b>访谈编辑部</b></span><span>播放 15.7万</span><span>点赞 5.2千</span><span>收藏 1.4千</span></div>
+<div class="edn-op"><button data-edn-like aria-pressed="false">♡ 点赞</button><button data-edn-save aria-pressed="false">☆ 收藏</button><button data-edn-share="《灯光师的三十年》">分享</button></div>
+</div>
+</article>
+<article class="edn-video-item">
+<div class="edn-video-thumb">
+<img alt="视频《一个人的露营清单》封面：帐篷与营灯夜色" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Crect width='320' height='200' fill='%231c3b33'/%3E%3Ccircle cx='250' cy='46' r='20' fill='%23f0e2b8'/%3E%3Cpath d='M0 160 Q80 120 160 152 T320 150 V200 H0Z' fill='%230f2620'/%3E%3Cpath d='M100 160 L140 92 L180 160Z' fill='%23c9883c'/%3E%3Cpath d='M140 160 L140 118' stroke='%23231a0e' stroke-width='3'/%3E%3Ccircle cx='216' cy='150' r='9' fill='%23ffe0a3'/%3E%3C/svg%3E">
+<span>10:05</span>
+</div>
+<div class="edn-video-main">
+<h3>《一个人的露营清单》：户外活动装备与安全经验分享</h3>
+<p>户外活动方向。从帐篷搭设到夜间保暖，把第一次独自露营最容易忽略的十七个细节讲透。</p>
+<div class="edn-tags"><span class="edn-tag">户外活动</span><span class="edn-tag">实用技巧</span></div>
+<div class="edn-meta"><span>作者 <b>野径指南</b></span><span>播放 13.9万</span><span>点赞 4.7千</span><span>收藏 2.6千</span></div>
+<div class="edn-op"><button data-edn-like aria-pressed="false">♡ 点赞</button><button data-edn-save aria-pressed="false">☆ 收藏</button><button data-edn-share="《一个人的露营清单》">分享</button></div>
+</div>
+</article>
+<article class="edn-video-item">
+<div class="edn-video-thumb">
+<img alt="视频《老片修复实验室》封面：胶片盘与修复界面" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Crect width='320' height='200' fill='%232a2f36'/%3E%3Ccircle cx='90' cy='100' r='48' fill='none' stroke='%23c9883c' stroke-width='10'/%3E%3Ccircle cx='90' cy='100' r='14' fill='%23c9883c'/%3E%3Crect x='170' y='52' width='120' height='96' rx='6' fill='%23151a1f' stroke='%235f6f66'/%3E%3Cg stroke='%237fb3a0' stroke-width='2'%3E%3Cpath d='M182 78 h96'/%3E%3Cpath d='M182 96 h72'/%3E%3Cpath d='M182 114 h88'/%3E%3C/g%3E%3C/svg%3E">
+<span>22:31</span>
+</div>
+<div class="edn-video-main">
+<h3>《老片修复实验室》：知识科普与影像修复流程全解</h3>
+<p>知识科普方向。以一部 1978 年的纪录片为例，讲解划痕、噪点与偏色的修复思路，专业但不难懂。</p>
+<div class="edn-tags"><span class="edn-tag">知识科普</span><span class="edn-tag earth">行业观察</span></div>
+<div class="edn-meta"><span>作者 <b>胶片研究所</b></span><span>播放 11.2万</span><span>点赞 4.1千</span><span>收藏 1.9千</span></div>
+<div class="edn-op"><button data-edn-like aria-pressed="false">♡ 点赞</button><button data-edn-save aria-pressed="false">☆ 收藏</button><button data-edn-share="《老片修复实验室》">分享</button></div>
+</div>
+</article>
+</div>
+</div>
+</section>
+
+<!-- 关键词深度解析 -->
+<section class="edn-section alt" id="edn-article" aria-labelledby="ednArticleTitle">
+<div class="edn-wrap">
+<article class="edn-article">
+<span class="edn-sec-tag">Deep Dive · 平台解读</span>
+<h2 id="ednArticleTitle">读懂伊甸园电影天堂最新版本：一个视频品牌官网的内容逻辑</h2>
+<p class="edn-article-lead">很多观众第一次打开这个页面时，会先注意到片单；但真正决定一个影视内容平台能否长期被信任的，是它如何组织内容、如何对待创作者，以及如何把「看片」变成一件有温度的日常事情。以下从内容生态、创作者体系与观看体验三个层面，说明伊甸园电影天堂最新版本的设计思路。</p>
+
+<h3>一、内容生态：从片单到社区，关键词背后的完整链条</h3>
+<p>在伊甸园电影天堂这个品牌语境里，“电影天堂”四个字对应的并不是简单的影片堆叠，而是一套持续运营的内容生态。平台把内容分成三条主线：第一条是<b>正版高清</b>放映内容，包含纪录片、剧情短片与经典影片修复版；第二条是原创策展，由官方编辑部围绕城市、职业、家庭等主题组织专题，每一期都有明确的选题说明与观看顺序；第三条是社区共创，普通用户的日常记录、创作者的经验分享都可以进入内容池，经过编辑审核后获得首页展示位，并参与每月的口碑榜单评选。</p>
+<p>这种三层结构带来的直接好处，是观众不必在信息流里反复试探。打开首页，你能清楚知道自己看到的是官方精编、专业创作者作品，还是社区用户的真实分享；每一条内容都标注了作者、时长、标签与数据，避免用情绪化标题换取点击。对一家做长期品牌的影视平台来说，<b>值得信赖</b>不是一句口号，而是这些具体信息是否稳定、可查、随时能回溯。</p>
+<div class="edn-quote">我们把“最新版本”理解为一次系统性的内容结构升级：片源更清晰、策展更聚焦、社区更真实，而不是只换一个首页皮肤。</div>
+
+<h3>二、创作者体系：让专业的人和真实的人被同时看见</h3>
+<p>视频平台最稀缺的资源从来不是片源数量，而是稳定的创作者。伊甸园电影天堂最新版本的创作者体系分为“签约创作者、认证创作者、社区作者”三类：签约创作者由平台提供拍摄支持与联合出品，认证创作者通过作品与资料审核后获得专属主页和内容推荐位，社区作者则可以从一次投稿开始，逐步累积作品与口碑。三类身份共享同一套数据面板，作品数、粉丝数、收藏数与互动情况公开透明，这也让<b>专业</b>与<b>原创</b>有了可衡量的标准。</p>
+<p>为了让新作者有明确的成长路径，平台设置了“新人扶持计划”：首条作品通过审核后进入新人榜，连续三个月更新可获得首页专题推荐机会；同时开放脚本、分镜、调色与声音四个方向的公开课，由签约创作者录制。对观众来说，这套体系意味着你看到的不是孤立的一条视频，而是一个可以被追踪、被比较、被长期关注的创作者成长轨迹。</p>
+
+<h3>三、观看体验：高清、正版与不打扰的界面</h3>
+<p>在播放体验上，伊甸园电影天堂最新版本优先保证画质与稳定：正版片源统一采用高清标准，播放器支持清晰度切换、断点续看与片单下载，弱网环境下自动降级但保留字幕完整显示。页面结构上，首页只保留一条公告、一个导航、一块首屏主视觉与按主题分组的正文，尽量不用弹窗打断观看。搜索框支持片名、创作者与专题三类检索，输入即给出提示，帮助观众更快找到想看的内容。</p>
+<p>社区互动则强调“轻量但有回应”：点赞、收藏、分享、评论都可以在条目内完成，不需要跳转多级页面；评论支持展开与收起，长评会进入精选区；举报与反馈入口放在固定位置，处理结果以站内公告的形式公开说明。这些看起来琐碎的细节，恰恰是<b>用户至上</b>与<b>匠心</b>最直接的体现，也是平台能够长期维持口碑的原因。</p>
+
+<h3>四、品牌与行业：为什么一个影视官网需要“持续运营”</h3>
+<p>影视内容行业的更新速度很快，新片、新账号、新玩法层出不穷，但真正能沉淀下来的品牌，靠的是持续运营的能力：是否有稳定的策展节奏，是否愿意为中小创作者投入，是否在技术升级之外还保持对内容的判断力。伊甸园电影天堂作为深耕垂直领域的视频品牌，把“每年完成一次内容结构复盘、每季度推出一期主题策展、每月更新一批创作者作品”写入运营节奏，并通过企业动态页对外同步进展。</p>
+<p>与此同时，平台也在尝试更多元的合作：与本地文化机构联合放映、与高校影像社团共建青年单元、与公益组织合作拍摄城市公共空间纪录短片。这些动作不会立刻带来流量，但会让品牌在行业观察者与普通观众心中形成更立体的印象——不是一堆链接的集合，而是一个愿意认真对待影像、也认真对待观看者的内容平台。对用户而言，选择这样一个平台，本质上是选择一种更从容、更可信的观看方式。</p>
+</article>
+</div>
+</section>
+
+<!-- S4 专题企划 -->
+<section class="edn-section tint" id="edn-topics" aria-labelledby="ednTopicsTitle">
+<div class="edn-wrap">
+<div class="edn-sec-head">
+<span class="edn-sec-tag">Series · 专题企划</span>
+<h2 id="ednTopicsTitle">正在更新的专题：伊甸园电影天堂官方企划</h2>
+<p>每一期专题都有明确的策展主题、更新时间与观看顺序，适合按顺序完整看完，也适合挑其中一条开始。</p>
+</div>
+<div class="edn-topic-grid">
+<article class="edn-topic big">
+<img alt="专题《城市影像计划》主视觉：夜晚街灯与行人长影" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 420'%3E%3Cdefs%3E%3ClinearGradient id='city' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%2325463a'/%3E%3Cstop offset='1' stop-color='%230c211a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='420' fill='url(%23city)'/%3E%3Cg fill='%23132f26'%3E%3Crect x='20' y='150' width='90' height='270'/%3E%3Crect x='130' y='100' width='70' height='320'/%3E%3Crect x='220' y='180' width='100' height='240'/%3E%3Crect x='340' y='120' width='80' height='300'/%3E%3Crect x='440' y='170' width='90' height='250'/%3E%3Crect x='550' y='130' width='70' height='290'/%3E%3C/g%3E%3Cg fill='%23e8b04b' opacity='.9'%3E%3Crect x='40' y='180' width='12' height='16'/%3E%3Crect x='66' y='220' width='12' height='16'/%3E%3Crect x='146' y='140' width='12' height='16'/%3E%3Crect x='172' y='190' width='12' height='16'/%3E%3Crect x='246' y='220' width='12' height='16'/%3E%3Crect x='366' y='160' width='12' height='16'/%3E%3Crect x='392' y='220' width='12' height='16'/%3E%3Crect x='470' y='210' width='12' height='16'/%3E%3Crect x='574' y='170' width='12' height='16'/%3E%3C/g%3E%3Crect y='360' width='640' height='60' fill='%2310261f'/%3E%3Cg fill='%23071a14'%3E%3Cellipse cx='120' cy='382' rx='18' ry='30'/%3E%3Cellipse cx='300' cy='376' rx='16' ry='34'/%3E%3Cellipse cx='470' cy='384' rx='18' ry='28'/%3E%3C/g%3E%3C/svg%3E">
+<div class="edn-topic-big-body">
+<span class="edn-topic-status"><i></i>持续更新中 · 第 3 期</span>
+<h3>城市影像计划：用镜头重新认识我们每天路过的街道</h3>
+<p>由官方策展团队发起，邀请 12 位创作者分别记录 12 座城市的日常切片。每期包含一条主片、一条创作者手记与一份城市拍摄地图，观众可以按地图自行探索。</p>
+<ul>
+<li>《菜市场早晨六点》：摊主与第一批顾客的半小时</li>
+<li>《末班地铁的十四个乘客》：公共交通里的城市切面</li>
+<li>《拆掉之前，给老街拍一张照》：城市更新中的影像存档</li>
+</ul>
+</div>
+</article>
+<article class="edn-topic">
+<span class="edn-topic-status">持续更新中 · 双周更</span>
+<h3>创作者幕后：一条短片是怎样被做出来的</h3>
+<p>从选题会、勘景、拍摄到剪辑调色，完整复盘创作流程，附带可复用的表格与模板。</p>
+<ul>
+<li>《选题会上的七个提问》：判断一个题目值不值得拍</li>
+<li>《预算三千怎么拍》：小成本拍摄的资源清单</li>
+<li>《后期最后一遍检查清单》：容易被忽略的二十二个细节</li>
+</ul>
+</article>
+<article class="edn-topic">
+<span class="edn-topic-status end">已完结 · 共 8 期</span>
+<h3>老片新看：经典影片修复与重读</h3>
+<p>联合影像修复团队，选取八部具有代表性的老片，讲修复技术，也讲它们今天为什么还值得看。</p>
+<ul>
+<li>《胶片划痕的三种修复思路》：技术流程拆解</li>
+<li>《三十年前的一场雨戏》：镜头语言重读</li>
+<li>《为什么老片值得高清重看》：一次行业对话</li>
+</ul>
+</article>
+</div>
+</div>
+</section>
+
+<!-- S5 创作者矩阵 -->
+<section class="edn-section alt" id="edn-authors" aria-labelledby="ednAuthorsTitle">
+<div class="edn-wrap">
+<div class="edn-sec-head">
+<span class="edn-sec-tag">Creators · 创作者矩阵</span>
+<h2 id="ednAuthorsTitle">伊甸园电影天堂的创作者们</h2>
+<p>来自纪录片、短片、美食、户外与声音采集等方向的专业创作者，持续为平台提供原创精品内容。</p>
+</div>
+<div class="edn-author-grid">
+<article class="edn-author">
+<div class="edn-avatar" style="background:linear-gradient(135deg,#155e46,#3f8f70)">林</div>
+<div class="edn-author-body">
+<div class="edn-author-name">林屿舟 <span class="edn-author-role">签约创作者</span></div>
+<div class="edn-author-field">纪录片 / 品牌故事</div>
+<div class="edn-author-stat"><span>作品 <b>38</b></span><span>粉丝 <b>26.4万</b></span></div>
+<p class="edn-author-bio">纪录片导演，十年跟拍经验，擅长从小人物的日常里找到时间的重量。《暮色放映厅》为其在平台发布的第六部纪录短片，长期关注城市变迁与代际记忆。</p>
+<button class="edn-author-more" data-edn-author="林屿舟">查看创作者主页</button>
+</div>
+</article>
+<article class="edn-author">
+<div class="edn-avatar" style="background:linear-gradient(135deg,#c98a2e,#8a5a1c)">禾</div>
+<div class="edn-author-body">
+<div class="edn-author-name">阿禾厨房 <span class="edn-author-role">认证创作者</span></div>
+<div class="edn-author-field">美食烹饪 / 生活方式</div>
+<div class="edn-author-stat"><span>作品 <b>121</b></span><span>粉丝 <b>41.2万</b></span></div>
+<p class="edn-author-bio">一人食影像食谱作者，主张“下班后也要好好吃饭”。镜头干净、步骤清楚，常用六种以内的食材完成一餐，作品被大量观众收藏为日常做饭清单。</p>
+<button class="edn-author-more" data-edn-author="阿禾厨房">查看创作者主页</button>
+</div>
+</article>
+<article class="edn-author">
+<div class="edn-avatar" style="background:linear-gradient(135deg,#3a6d8c,#234a60)">沈</div>
+<div class="edn-author-body">
+<div class="edn-author-name">沈迟的镜头 <span class="edn-author-role">认证创作者</span></div>
+<div class="edn-author-field">城市探索 / 治愈影像</div>
+<div class="edn-author-stat"><span>作品 <b>64</b></span><span>粉丝 <b>18.9万</b></span></div>
+<p class="edn-author-bio">自由摄影师，习惯用一台老相机记录街区的日常。作品节奏缓慢、声音讲究，强调“先观察再拍摄”，也常在评论区回答观众的取景问题。</p>
+<button class="edn-author-more" data-edn-author="沈迟的镜头">查看创作者主页</button>
+</div>
+</article>
+<article class="edn-author">
+<div class="edn-avatar" style="background:linear-gradient(135deg,#6d5a8c,#403054)">周</div>
+<div class="edn-author-body">
+<div class="edn-author-name">周野剪辑室 <span class="edn-author-role">专业创作者</span></div>
+<div class="edn-author-field">创作幕后 / 实用技巧</div>
+<div class="edn-author-stat"><span>作品 <b>57</b></span><span>粉丝 <b>22.7万</b></span></div>
+<p class="edn-author-bio">剪辑师出身，做过广告也做过纪录片。擅长把复杂的后期流程讲成可执行的步骤，公开课累计播放超过百万，被观众称为“最适合新手的剪辑陪练”。</p>
+<button class="edn-author-more" data-edn-author="周野剪辑室">查看创作者主页</button>
+</div>
+</article>
+<article class="edn-author">
+<div class="edn-avatar" style="background:linear-gradient(135deg,#2f7a5b,#1b4a37)">野</div>
+<div class="edn-author-body">
+<div class="edn-author-name">野径指南 <span class="edn-author-role">社区作者</span></div>
+<div class="edn-author-field">户外活动 / 经验分享</div>
+<div class="edn-author-stat"><span>作品 <b>43</b></span><span>粉丝 <b>12.3万</b></span></div>
+<p class="edn-author-bio">户外爱好者，从城市周边徒步开始拍视频，逐步记录长线露营与轻量化装备实践。内容强调安全与环保，常提醒观众“先学会离开，再谈到达”。</p>
+<button class="edn-author-more" data-edn-author="野径指南">查看创作者主页</button>
+</div>
+</article>
+<article class="edn-author">
+<div class="edn-avatar" style="background:linear-gradient(135deg,#8a4a3c,#5c2c22)">声</div>
+<div class="edn-author-body">
+<div class="edn-author-name">声场记录组 <span class="edn-author-role">专业创作者</span></div>
+<div class="edn-author-field">声音采集 / 城市观察</div>
+<div class="edn-author-stat"><span>作品 <b>29</b></span><span>粉丝 <b>9.6万</b></span></div>
+<p class="edn-author-bio">由两位录音师组成的小团队，专注城市环境声音与田野录音。作品常以声音为主角，画面退到其次，试图让观众重新听见已经习惯的日常。</p>
+<button class="edn-author-more" data-edn-author="声场记录组">查看创作者主页</button>
+</div>
+</article>
+</div>
+</div>
+</section>
+
+<!-- S6 数据榜单 -->
+<section class="edn-section" id="edn-rank" aria-labelledby="ednRankTitle">
+<div class="edn-wrap">
+<div class="edn-sec-head">
+<span class="edn-sec-tag">Ranking · 数据榜单</span>
+<h2 id="ednRankTitle">伊甸园电影天堂最新版本榜单：热度、新人与口碑</h2>
+<p>榜单按近三十天的播放、互动与收藏综合计算，每周一更新，可作为观众选片与创作者参考的双向指标。</p>
+</div>
+<div class="edn-rank-grid">
+<div class="edn-rank-card">
+<h3><i></i>热度榜 TOP 5</h3>
+<ol>
+<li><span class="edn-rank-no">1</span><span class="edn-rank-txt"><b>《暮色放映厅》</b><small>播放 86.4万 · 互动 4.3万</small></span></li>
+<li><span class="edn-rank-no">2</span><span class="edn-rank-txt"><b>《十分钟做一顿晚饭》第三季</b><small>播放 42.7万 · 互动 3.1万</small></span></li>
+<li><span class="edn-rank-no">3</span><span class="edn-rank-txt"><b>《剪辑台上的十分钟》</b><small>播放 31.2万 · 互动 2.4万</small></span></li>
+<li><span class="edn-rank-no">4</span><span class="edn-rank-txt"><b>《在菜市场拍一部电影》</b><small>播放 28.9万 · 互动 2.2万</small></span></li>
+<li><span class="edn-rank-no">5</span><span class="edn-rank-txt"><b>《雨天的旧书店》</b><small>播放 21.6万 · 互动 1.8万</small></span></li>
+</ol>
+</div>
+<div class="edn-rank-card">
+<h3><i></i>新人榜 TOP 5</h3>
+<ol>
+<li><span class="edn-rank-no">1</span><span class="edn-rank-txt"><b>半格影像</b><small>入驻 2 个月 · 作品 9 条</small></span></li>
+<li><span class="edn-rank-no">2</span><span class="edn-rank-txt"><b>旧窗台</b><small>入驻 3 个月 · 作品 6 条</small></span></li>
+<li><span class="edn-rank-no">3</span><span class="edn-rank-txt"><b>傍晚电台</b><small>入驻 1 个月 · 作品 4 条</small></span></li>
+<li><span class="edn-rank-no">4</span><span class="edn-rank-txt"><b>小城食记</b><small>入驻 4 个月 · 作品 11 条</small></span></li>
+<li><span class="edn-rank-no">5</span><span class="edn-rank-txt"><b>北纬三十度</b><small>入驻 2 个月 · 作品 7 条</small></span></li>
+</ol>
+</div>
+<div class="edn-rank-card">
+<h3><i></i>口碑榜 TOP 5</h3>
+<ol>
+<li><span class="edn-rank-no">1</span><span class="edn-rank-txt"><b>《老片修复实验室》</b><small>好评率 98.6% · 收藏 1.9千</small></span></li>
+<li><span class="edn-rank-no">2</span><span class="edn-rank-txt"><b>《一条街的十二种声音》</b><small>好评率 98.1% · 收藏 1.8千</small></span></li>
+<li><span class="edn-rank-no">3</span><span class="edn-rank-txt"><b>《灯光师的三十年》</b><small>好评率 97.7% · 收藏 1.4千</small></span></li>
+<li><span class="edn-rank-no">4</span><span class="edn-rank-txt"><b>《一个人的露营清单》</b><small>好评率 97.2% · 收藏 2.6千</small></span></li>
+<li><span class="edn-rank-no">5</span><span class="edn-rank-txt"><b>《在菜市场拍一部电影》</b><small>好评率 96.9% · 收藏 1.6千</small></span></li>
+</ol>
+</div>
+</div>
+</div>
+</section>
+
+<!-- S7 评价 + 动态/合作 -->
+<section class="edn-section alt" id="edn-voices" aria-labelledby="ednVoicesTitle">
+<div class="edn-wrap">
+<div class="edn-sec-head">
+<span class="edn-sec-tag">Voices · 社区评价</span>
+<h2 id="ednVoicesTitle">观众怎么说：关于伊甸园电影天堂的真实评价</h2>
+<p>以下评价来自平台社区，涵盖观看体验、内容质量与创作者互动等不同维度，保留原始措辞。</p>
+</div>
+<div class="edn-review-grid">
+<article class="edn-review">
+<div class="edn-review-head">
+<div class="edn-review-avatar" style="background:#155e46">顾</div>
+<div><div class="edn-review-name">顾南枝</div><div class="edn-review-when">3 天前 · 观看《暮色放映厅》</div></div>
+</div>
+<p>第一次在电影平台看到这么安静的纪录片。没有配乐轰炸，只有放映机的声音和老陈的呼吸，看完坐着没动，过了好一会儿才想起关掉页面。</p>
+<div class="edn-stars">★★★★★</div>
+</article>
+<article class="edn-review">
+<div class="edn-review-head">
+<div class="edn-review-avatar" style="background:#c98a2e">阿</div>
+<div><div class="edn-review-name">阿岑</div><div class="edn-review-when">5 天前 · 观看《十分钟做一顿晚饭》</div></div>
+</div>
+<p>步骤真的清楚，切菜和调味都给特写，跟着做没翻车。唯一希望是片尾能附一张食材清单图，方便直接截图去超市。</p>
+<div class="edn-stars">★★★★☆</div>
+</article>
+<article class="edn-review">
+<div class="edn-review-head">
+<div class="edn-review-avatar" style="background:#3a6d8c">木</div>
+<div><div class="edn-review-name">木木不加班</div><div class="edn-review-when">1 周前 · 观看《剪辑台上的十分钟》</div></div>
+</div>
+<p>作为刚开始剪片的人，这条视频解决了我很多困惑，尤其是素材筛选那一段。已经在平台的下载区拿到了调色参考，准备照着试一遍。</p>
+<div class="edn-stars">★★★★★</div>
+</article>
+<article class="edn-review">
+<div class="edn-review-head">
+<div class="edn-review-avatar" style="background:#8a4a3c">徐</div>
+<div><div class="edn-review-name">徐行</div><div class="edn-review-when">1 周前 · 使用站内搜索</div></div>
+</div>
+<p>搜索体验不错，输入“修复”就给出了专题和相关创作者，不用一层层点。希望以后能按视频时长筛选，找长片会更方便一些。</p>
+<div class="edn-stars">★★★★☆</div>
+</article>
+<article class="edn-review">
+<div class="edn-review-head">
+<div class="edn-review-avatar" style="background:#2f7a5b">夏</div>
+<div><div class="edn-review-name">夏末的猫</div><div class="edn-review-when">2 周前 · 观看《雨天的旧书店》</div></div>
+</div>
+<p>非常治愈。雨声和翻书声处理得很好，适合晚上戴耳机看。评论区也很友善，大家都在聊自己的书店记忆。</p>
+<div class="edn-stars">★★★★★</div>
+</article>
+<article class="edn-review">
+<div class="edn-review-head">
+<div class="edn-review-avatar" style="background:#6d5a8c">陆</div>
+<div><div class="edn-review-name">陆拾贰</div><div class="edn-review-when">2 周前 · 观看《一个人的露营清单》</div></div>
+</div>
+<p>安全提醒讲得实在，没有只展示好看的画面。装备部分建议再补一条冬季清单，北方用户会很需要。</p>
+<div class="edn-stars">★★★★☆</div>
+</article>
+<article class="edn-review">
+<div class="edn-review-head">
+<div class="edn-review-avatar" style="background:#1f6b57">白</div>
+<div><div class="edn-review-name">白露为霜</div><div class="edn-review-when">3 周前 · 观看《老片修复实验室》</div></div>
+</div>
+<p>之前以为修复就是调个色，看完才知道有这么多工序。讲解很专业，但没有门槛，外行也听得懂。已经收藏准备二刷。</p>
+<div class="edn-stars">★★★★★</div>
+</article>
+<article class="edn-review">
+<div class="edn-review-head">
+<div class="edn-review-avatar" style="background:#a8743c">程</div>
+<div><div class="edn-review-name">程一川</div><div class="edn-review-when">3 周前 · 投稿体验</div></div>
+</div>
+<p>投了一条自己拍的短片，审核反馈写得具体，指出了收音和片头节奏的问题。虽然没上首页，但这种反馈让人愿意再投第二次。</p>
+<div class="edn-stars">★★★★★</div>
+</article>
+</div>
+</div>
+</section>
+
+<section class="edn-section" id="edn-news" aria-labelledby="ednNewsTitle">
+<div class="edn-wrap">
+<div class="edn-two-col">
+<div>
+<div class="edn-sec-head" style="margin-bottom:20px">
+<span class="edn-sec-tag">Updates · 企业动态</span>
+<h2 id="ednNewsTitle">伊甸园电影天堂官方动态与更新日志</h2>
+</div>
+<ul class="edn-news">
+<li>
+<span class="edn-news-date">11-18</span>
+<div class="edn-news-body">
+<h3>「城市影像计划」第三期上线，新增三座城市与拍摄地图下载</h3>
+<p>本期收录三座城市的日常纪录短片，同步开放城市拍摄地图与选题手册下载。</p>
+</div>
+</li>
+<li>
+<span class="edn-news-date">11-12</span>
+<div class="edn-news-body">
+<h3>创作者扶持计划开放新一轮报名</h3>
+<p>面向首年入驻的原创作者，提供拍摄基金、公开课与专题推荐三项支持，报名截止 12 月 10 日。</p>
+</div>
+</li>
+<li>
+<span class="edn-news-date">11-05</span>
+<div class="edn-news-body">
+<h3>高清播放器升级：断点续看与字幕完整显示</h3>
+<p>正版片源统一升级高清标准，弱网环境自动降级但仍保证字幕完整，已对全部用户开放。</p>
+</div>
+</li>
+<li>
+<span class="edn-news-date">10-28</span>
+<div class="edn-news-body">
+<h3>社区评论精选区上线，优质长评获得更多展示</h3>
+<p>字数超过 100 字、有具体观点的评论将进入精选区，与视频一起被收藏与分享。</p>
+</div>
+</li>
+<li>
+<span class="edn-news-date">10-20</span>
+<div class="edn-news-body">
+<h3>与三家本地文化机构达成联合放映合作</h3>
+<p>首场联合放映将在本月底举行，观众可在线报名，后续场次将在动态页持续公布。</p>
+</div>
+</li>
+</ul>
+</div>
+<div>
+<div class="edn-sec-head" style="margin-bottom:20px">
+<span class="edn-sec-tag">Partners · 合作品牌</span>
+<h2 style="font-size:22px">内容生态合作伙伴</h2>
+</div>
+<div class="edn-partner-grid">
+<div class="edn-partner"><b>拾光影像社</b><span>联合出品 · 纪录短片</span></div>
+<div class="edn-partner"><b>城西文化中心</b><span>联合放映 · 线下活动</span></div>
+<div class="edn-partner"><b>胶片研究所</b><span>技术支持 · 影像修复</span></div>
+<div class="edn-partner"><b>南岸书店联盟</b><span>内容合作 · 城市阅读</span></div>
+<div class="edn-partner"><b>野径户外</b><span>装备支持 · 户外内容</span></div>
+<div class="edn-partner"><b>青年影像基金</b><span>创作者扶持 · 公益项目</span></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 投稿 CTA -->
+<section class="edn-section" aria-labelledby="ednCtaTitle">
+<div class="edn-wrap">
+<div class="edn-cta">
+<div>
+<h2 id="ednCtaTitle">把你的影像，放进伊甸园电影天堂最新版本的片单</h2>
+<p>无论是一条日常记录、一部原创短片，还是一份拍摄经验，都可以通过官方投稿通道提交。通过审核的作品将获得创作者主页、数据面板与专题推荐机会，并参与每月的口碑榜单评选。</p>
+</div>
+<div class="edn-cta-actions">
+<button class="edn-btn edn-btn-primary" data-edn-open="submit">立即投稿报名</button>
+<button class="edn-btn edn-btn-ghost" data-edn-open="share">分享给朋友</button>
+</div>
+</div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section class="edn-section alt" id="edn-faq" aria-labelledby="ednFaqTitle">
+<div class="edn-wrap">
+<div class="edn-sec-head" style="text-align:center;max-width:700px;margin-left:auto;margin-right:auto">
+<span class="edn-sec-tag">FAQ · 帮助中心</span>
+<h2 id="ednFaqTitle">关于伊甸园电影天堂最新版本的常见问题</h2>
+<p>整理观众与创作者最常询问的六类问题，如未覆盖，可通过页面底部联系方式反馈。</p>
+</div>
+<div class="edn-faq">
+<details>
+<summary>伊甸园电影天堂最新版本和旧版有什么主要区别？</summary>
+<p>最新版本在内容结构、播放体验和创作者体系三方面做了升级：片源统一为高清正版标准，首页按焦点、专题、榜单重新组织；播放器支持断点续看与字幕完整显示；创作者体系新增新人榜与扶持计划，投稿反馈也更具体。</p>
+</details>
+<details>
+<summary>平台的内容都是正版授权吗？</summary>
+<p>官方放映区的影片均通过授权合作获得，页面会标注来源与合作方；社区投稿内容由作者上传并授权平台展示，平台在审核环节核查原创性。如发现版权问题，可通过举报入口反馈，我们会在核实后处理。</p>
+</details>
+<details>
+<summary>如何成为平台创作者？</summary>
+<p>点击页面中的“我要投稿”按钮，填写作者信息与作品链接即可提交。首发作品通过审核后自动成为社区作者，可累积作品与粉丝数据；连续更新并达到一定质量标准的作者，可申请认证创作者身份。</p>
+</details>
+<details>
+<summary>投稿后多久会有反馈？审核标准是什么？</summary>
+<p>一般在五个工作日内通过站内消息反馈结果。审核主要看三点：内容是否原创、信息是否准确、观看体验是否完整（画面稳定、收音清楚、标题与内容一致）。未通过的作品会给出具体修改建议。</p>
+</details>
+<details>
+<summary>视频可以下载到本地观看吗？</summary>
+<p>官方放映区中标注“支持下载”的片源可在登录后下载到本地缓存，仅供个人观看，请勿二次传播或用于商业用途。社区投稿内容的下载权限由作者自行设置。</p>
+</details>
+<details>
+<summary>遇到播放卡顿或画面异常怎么办？</summary>
+<p>建议先切换清晰度或刷新页面；如仍异常，请通过页面底部的反馈入口说明设备、网络环境与具体片名，我们会在工作时间内排查，并在企业动态页同步修复进展。</p>
+</details>
+</div>
+</div>
+</section>
+
+</main>
+
+<!-- S8 页脚 -->
+<footer class="edn-footer">
+<div class="edn-wrap">
+<div class="edn-footer-top">
+<div>
+<div class="edn-footer-brand"><i>伊</i>伊甸园电影天堂</div>
+<p class="edn-footer-desc">伊甸园电影天堂官方网站 · 正版高清影视内容平台。我们持续运营原创内容与创作者社区，坚持品质与口碑，为观众提供值得信赖的观看体验。</p>
+</div>
+<div>
+<h3>内容入口</h3>
+<ul>
+<li><a href="#edn-focus">焦点内容</a></li>
+<li><a href="#edn-topics">专题企划</a></li>
+<li><a href="#edn-rank">数据榜单</a></li>
+<li><a href="#edn-authors">创作者矩阵</a></li>
+</ul>
+</div>
+<div>
+<h3>关于平台</h3>
+<ul>
+<li><a href="#edn-article">平台解读</a></li>
+<li><a href="#edn-news">企业动态</a></li>
+<li><a href="#edn-faq">帮助中心</a></li>
+<li><a href="#edn-voices">社区评价</a></li>
+</ul>
+</div>
+<div>
+<h3>联系与投稿</h3>
+<ul>
+<li>投稿邮箱：submit@edencinema.example</li>
+<li>合作咨询：partner@edencinema.example</li>
+<li>内容反馈：feedback@edencinema.example</li>
+<li>服务时间：工作日 10:00–19:00</li>
+</ul>
+</div>
+</div>
+<div class="edn-footer-bottom">
+<span>© 2026 伊甸园电影天堂 官方网站 · 版权所有 · 持续运营中</span>
+<span>正版高清 · 原创内容 · 社区共创</span>
+<span>内容审核与版权保护由平台统一负责</span>
+</div>
+</div>
+</footer>
+
+<button class="edn-top" id="ednTopBtn" aria-label="回到顶部">↑</button>
+<div class="edn-toast" id="ednToast" role="status" aria-live="polite"></div>
+
+<!-- 弹窗：投稿 -->
+<div class="edn-modal" id="ednModalSubmit" aria-hidden="true" role="dialog" aria-labelledby="ednModalSubmitTitle">
+<div class="edn-modal-mask" data-edn-close></div>
+<div class="edn-modal-box">
+<button class="edn-modal-close" data-edn-close aria-label="关闭">×</button>
+<h3 id="ednModalSubmitTitle">投稿 · 报名创作者计划</h3>
+<p class="edn-modal-sub">填写基本信息后，编辑部将在五个工作日内通过站内消息反馈审核结果。</p>
+<form id="ednSubmitForm">
+<label class="edn-field"><span>作者昵称</span><input type="text" required placeholder="例如：沈迟的镜头"></label>
+<label class="edn-field"><span>擅长方向</span>
+<select required>
+<option value="">请选择</option>
+<option>纪录片 / 品牌故事</option>
+<option>美食烹饪 / 生活方式</option>
+<option>城市探索 / 治愈影像</option>
+<option>创作幕后 / 实用技巧</option>
+<option>户外活动 / 经验分享</option>
+<option>其他方向</option>
+</select>
+</label>
+<label class="edn-field"><span>作品链接或简述</span><textarea required placeholder="可填写作品链接，或简单描述内容主题与时长"></textarea></label>
+<div class="edn-modal-actions">
+<button type="button" class="edn-btn edn-btn-ghost" data-edn-close>取消</button>
+<button type="submit" class="edn-btn edn-btn-primary">提交投稿</button>
+</div>
+</form>
+</div>
+</div>
+
+<!-- 弹窗：评论 -->
+<div class="edn-modal" id="ednModalComment" aria-hidden="true" role="dialog" aria-labelledby="ednModalCommentTitle">
+<div class="edn-modal-mask" data-edn-close></div>
+<div class="edn-modal-box">
+<button class="edn-modal-close" data-edn-close aria-label="关闭">×</button>
+<h3 id="ednModalCommentTitle">发表评论</h3>
+<p class="edn-modal-sub" id="ednCommentTarget">正在评论：伊甸园电影天堂精选内容</p>
+<form id="ednCommentForm">
+<label class="edn-field"><span>你的昵称</span><input type="text" required placeholder="请输入昵称"></label>
+<label class="edn-field"><span>评论内容</span><textarea required placeholder="写下你的观后感，100 字以上的长评有机会进入精选区"></textarea></label>
+<div class="edn-modal-actions">
+<button type="button" class="edn-btn edn-btn-ghost" data-edn-close>取消</button>
+<button type="submit" class="edn-btn edn-btn-primary">发布评论</button>
+</div>
+</form>
+</div>
+</div>
+
+<!-- 弹窗：分享 -->
+<div class="edn-modal" id="ednModalShare" aria-hidden="true" role="dialog" aria-labelledby="ednModalShareTitle">
+<div class="edn-modal-mask" data-edn-close></div>
+<div class="edn-modal-box">
+<button class="edn-modal-close" data-edn-close aria-label="关闭">×</button>
+<h3 id="ednModalShareTitle">分享这条内容</h3>
+<p class="edn-modal-sub" id="ednShareTarget">分享到常用平台，或复制链接发给朋友。</p>
+<div class="edn-share-row">
+<button type="button" data-edn-copylink>复制链接</button>
+<button type="button" data-edn-shareto="微信">微信</button>
+<button type="button" data-edn-shareto="微博">微博</button>
+<button type="button" data-edn-shareto="QQ">QQ</button>
+</div>
+<div class="edn-modal-actions">
+<button type="button" class="edn-btn edn-btn-ghost" data-edn-close>关闭</button>
+</div>
+</div>
+</div>
+
+<!-- 弹窗：作者信息 -->
+<div class="edn-modal" id="ednModalAuthor" aria-hidden="true" role="dialog" aria-labelledby="ednModalAuthorTitle">
+<div class="edn-modal-mask" data-edn-close></div>
+<div class="edn-modal-box">
+<button class="edn-modal-close" data-edn-close aria-label="关闭">×</button>
+<h3 id="ednModalAuthorTitle">创作者主页</h3>
+<p class="edn-modal-sub" id="ednAuthorText">伊甸园电影天堂创作者</p>
+<div class="edn-modal-actions">
+<button type="button" class="edn-btn edn-btn-primary" data-edn-close>知道了</button>
+</div>
+</div>
+</div>
+
+<script>
+(function(){
+"use strict";
+var toastEl=document.getElementById("ednToast");
+var toastTimer=null;
+function showToast(msg){
+if(!toastEl)return;
+toastEl.textContent=msg;
+toastEl.classList.add("is-show");
+clearTimeout(toastTimer);
+toastTimer=setTimeout(function(){toastEl.classList.remove("is-show")},2400);
+}
+
+/* 移动端导航 */
+var burger=document.getElementById("ednBurger");
+var mobileNav=document.getElementById("ednMobileNav");
+if(burger&&mobileNav){
+burger.addEventListener("click",function(){
+var open=mobileNav.classList.toggle("is-open");
+burger.classList.toggle("is-open",open);
+burger.setAttribute("aria-expanded",open?"true":"false");
+});
+mobileNav.addEventListener("click",function(e){
+if(e.target.tagName==="A"){
+mobileNav.classList.remove("is-open");
+burger.classList.remove("is-open");
+burger.setAttribute("aria-expanded","false");
+}
+});
+}
+
+/* 搜索 */
+var searchForm=document.getElementById("ednSearchForm");
+var searchInput=document.getElementById("ednSearchInput");
+var searchFb=document.getElementById("ednSearchFb");
+function runSearch(kw){
+if(!searchFb)return;
+kw=(kw||"").trim();
+if(!kw){
+searchFb.textContent="请输入片名、创作者或专题关键词后再搜索。";
+searchFb.classList.add("is-show");
+return;
+}
+var cards=document.querySelectorAll(".edn-video-main h3, .edn-side-item h3, .edn-card-body h3, .edn-topic h3, .edn-author-name");
+var hit=0;
+cards.forEach(function(node){
+if(node.textContent.indexOf(kw)>-1)hit++;
+});
+if(hit===0){
+searchFb.textContent="未找到与「"+kw+"」直接匹配的内容，可尝试“修复”“城市”或“剪辑”等关键词。";
+}else{
+searchFb.textContent="已为你匹配到 "+hit+" 条与「"+kw+"」相关的内容，可在下方内容区浏览。";
+}
+searchFb.classList.add("is-show");
+}
+if(searchForm&&searchInput){
+searchForm.addEventListener("submit",function(e){
+e.preventDefault();
+runSearch(searchInput.value);
+showToast("搜索已提交");
+});
+}
+if(searchInput){
+searchInput.addEventListener("input",function(){
+if(!searchFb)return;
+if(searchInput.value.trim()===""){
+searchFb.classList.remove("is-show");
+}
+});
+}
+
+/* 点赞、收藏 */
+document.addEventListener("click",function(e){
+var likeBtn=e.target.closest("[data-edn-like]");
+if(likeBtn){
+var liked=likeBtn.getAttribute("aria-pressed")==="true";
+likeBtn.setAttribute("aria-pressed",liked?"false":"true");
+likeBtn.classList.toggle("is-liked",!liked);
+likeBtn.textContent=liked?"♡ 点赞":"♥ 已赞";
+if(!liked)showToast("已点赞，感谢支持");
+return;
+}
+var saveBtn=e.target.closest("[data-edn-save]");
+if(saveBtn){
+var saved=saveBtn.getAttribute("aria-pressed")==="true";
+saveBtn.setAttribute("aria-pressed",saved?"false":"true");
+saveBtn.classList.toggle("is-saved",!saved);
+saveBtn.textContent=saved?"☆ 收藏":"★ 已收藏";
+showToast(saved?"已取消收藏":"已加入收藏，可在个人中心查看");
+return;
+}
+});
+
+/* 弹窗通用 */
+function openModal(id){
+var m=document.getElementById(id);
+if(!m)return;
+m.classList.add("is-open");
+m.setAttribute("aria-hidden","false");
+document.body.style.overflow="hidden";
+}
+function closeModal(m){
+m.classList.remove("is-open");
+m.setAttribute("aria-hidden","true");
+document.body.style.overflow="";
+}
+document.addEventListener("click",function(e){
+var openBtn=e.target.closest("[data-edn-open]");
+if(openBtn){
+var kind=openBtn.getAttribute("data-edn-open");
+if(kind==="submit")openModal("ednModalSubmit");
+if(kind==="share")openModal("ednModalShare");
+return;
+}
+var closeBtn=e.target.closest("[data-edn-close]");
+if(closeBtn){
+var modal=closeBtn.closest(".edn-modal");
+if(modal)closeModal(modal);
+return;
+}
+var shareBtn=e.target.closest("[data-edn-share]");
+if(shareBtn){
+var title=shareBtn.getAttribute("data-edn-share")||"伊甸园电影天堂精选内容";
+var target=document.getElementById("ednShareTarget");
+if(target)target.textContent="「"+title+"」——分享到常用平台，或复制链接发给朋友。";
+openModal("ednModalShare");
+return;
+}
+var commentBtn=e.target.closest("[data-edn-comment]");
+if(commentBtn){
+var ctitle=commentBtn.getAttribute("data-edn-comment")||"伊甸园电影天堂精选内容";
+var ctarget=document.getElementById("ednCommentTarget");
+if(ctarget)ctarget.textContent="正在评论："+ctitle;
+openModal("ednModalComment");
+return;
+}
+var authorBtn=e.target.closest("[data-edn-author]");
+if(authorBtn){
+var name=authorBtn.getAttribute("data-edn-author")||"创作者";
+var atext=document.getElementById("ednAuthorText");
+if(atext)atext.textContent=name+" · 伊甸园电影天堂认证创作者。擅长领域作品已在首页创作者矩阵展示，主页包含作品列表、数据面板与最新动态。";
+openModal("ednModalAuthor");
+return;
+}
+});
+document.addEventListener("keydown",function(e){
+if(e.key==="Escape"){
+var opened=document.querySelector(".edn-modal.is-open");
+if(opened)closeModal(opened);
+}
+});
+
+/* 复制链接 */
+document.addEventListener("click",function(e){
+var copyBtn=e.target.closest("[data-edn-copylink]");
+if(!copyBtn)return;
+var text="伊甸园电影天堂最新版本 · 正版高清影视内容平台";
+if(navigator.clipboard&&navigator.clipboard.writeText){
+navigator.clipboard.writeText(text).then(function(){
+showToast("链接已复制，可以分享给朋友了");
+}).catch(function(){
+showToast("复制失败，请手动选择内容复制");
+});
+}else{
+showToast("当前环境不支持自动复制，请手动复制");
+}
+});
+
+/* 分享平台提示 */
+document.addEventListener("click",function(e){
+var toBtn=e.target.closest("[data-edn-shareto]");
+if(!toBtn)return;
+var platform=toBtn.getAttribute("data-edn-shareto");
+showToast("已生成"+platform+"分享卡片，请在分享面板中确认");
+});
+
+/* 表单提交 */
+var submitForm=document.getElementById("ednSubmitForm");
+if(submitForm){
+submitForm.addEventListener("submit",function(e){
+e.preventDefault();
+var modal=submitForm.closest(".edn-modal");
+if(modal)closeModal(modal);
+submitForm.reset();
+showToast("投稿已提交，编辑部将在五个工作日内反馈");
+});
+}
+var commentForm=document.getElementById("ednCommentForm");
+if(commentForm){
+commentForm.addEventListener("submit",function(e){
+e.preventDefault();
+var modal=commentForm.closest(".edn-modal");
+if(modal)closeModal(modal);
+commentForm.reset();
+showToast("评论已发布，感谢你的分享");
+});
+}
+
+/* 回到顶部 */
+var topBtn=document.getElementById("ednTopBtn");
+window.addEventListener("scroll",function(){
+if(!topBtn)return;
+if(window.scrollY>480)topBtn.classList.add("is-show");
+else topBtn.classList.remove("is-show");
+},{passive:true});
+if(topBtn){
+topBtn.addEventListener("click",function(){
+window.scrollTo({top:0,behavior:"smooth"});
+});
+}
+
+/* 数字滚动 */
+var counted=false;
+function runCount(){
+if(counted)return;
+var nums=document.querySelectorAll("[data-edn-count]");
+if(!nums.length)return;
+var trigger=false;
+nums.forEach(function(n){
+var rect=n.getBoundingClientRect();
+if(rect.top<window.innerHeight&&rect.bottom>0)trigger=true;
+});
+if(!trigger)return;
+counted=true;
+nums.forEach(function(n){
+var target=parseInt(n.getAttribute("data-edn-count"),10)||0;
+var suffix=n.querySelector("span")?n.querySelector("span").outerHTML:"";
+var start=0,dur=1200,t0=null;
+function step(ts){
+if(!t0)t0=ts;
+var p=Math.min((ts-t0)/dur,1);
+var val=Math.floor(start+(target-start)*p);
+n.innerHTML=val.toLocaleString("zh-CN")+suffix;
+if(p<1)requestAnimationFrame(step);
+}
+requestAnimationFrame(step);
+});
+}
+window.addEventListener("scroll",runCount,{passive:true});
+window.addEventListener("load",runCount);
+})();
+</script>
+</body>
+                                                                   </html>
